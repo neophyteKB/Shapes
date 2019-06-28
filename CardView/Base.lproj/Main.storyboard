@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,64 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euO-iL-HGA" customClass="CustomCardDesign" customModule="CardView" customModuleProvider="target">
+                                <rect key="frame" x="87" y="268" width="240" height="360"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KU-H5-2NF">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="360"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="BEk-FP-SWd"/>
+                                    <constraint firstAttribute="trailing" secondItem="2KU-H5-2NF" secondAttribute="trailing" id="HVt-cE-nUB"/>
+                                    <constraint firstItem="2KU-H5-2NF" firstAttribute="top" secondItem="euO-iL-HGA" secondAttribute="top" id="OJM-YC-WEg"/>
+                                    <constraint firstAttribute="bottom" secondItem="2KU-H5-2NF" secondAttribute="bottom" id="SJY-5b-54x"/>
+                                    <constraint firstItem="2KU-H5-2NF" firstAttribute="leading" secondItem="euO-iL-HGA" secondAttribute="leading" id="eas-wb-sh6"/>
+                                    <constraint firstAttribute="width" constant="240" id="jT8-my-Uhx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FgO-7k-rw2" customClass="CustomCardDesign" customModule="CardView" customModuleProvider="target">
+                                <rect key="frame" x="167" y="72" width="80" height="120"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAu-Uw-3cN">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="120"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="9xf-J4-rdh"/>
+                                    <constraint firstAttribute="trailing" secondItem="FAu-Uw-3cN" secondAttribute="trailing" id="KPs-Zl-7wA"/>
+                                    <constraint firstAttribute="bottom" secondItem="FAu-Uw-3cN" secondAttribute="bottom" id="MyQ-FN-7YN"/>
+                                    <constraint firstItem="FAu-Uw-3cN" firstAttribute="top" secondItem="FgO-7k-rw2" secondAttribute="top" id="Qd1-dH-7y4"/>
+                                    <constraint firstAttribute="height" constant="120" id="h2A-aD-lcQ"/>
+                                    <constraint firstItem="FAu-Uw-3cN" firstAttribute="leading" secondItem="FgO-7k-rw2" secondAttribute="leading" id="lRE-0c-fFB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="euO-iL-HGA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O98-Vi-yzD"/>
+                            <constraint firstItem="euO-iL-HGA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rhb-Ug-gt0"/>
+                            <constraint firstItem="FgO-7k-rw2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="caU-BO-kLw"/>
+                            <constraint firstItem="FgO-7k-rw2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sZQ-LR-QWw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="card" destination="2KU-H5-2NF" id="j2E-nB-1M8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="18.75"/>
         </scene>
     </scenes>
 </document>

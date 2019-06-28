@@ -1,26 +1,16 @@
 //
-//  ViewController.swift
+//  GrintafyPlayerCard.swift
 //  CardView
 //
 //  Created by Apple on 28/06/19.
 //  Copyright © 2019 Apple. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
 
-    @IBOutlet weak var card: UIView?
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-}
-
-
-class CustomCardDesign: UIView {
+class GrintafyPlayerCard: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -79,4 +69,3 @@ class CustomCardDesign: UIView {
         return path
     }
 }
-

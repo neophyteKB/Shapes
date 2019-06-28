@@ -14,6 +14,7 @@
 		189C7AB822C5D6AF00FB977C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C7AB622C5D6AF00FB977C /* LaunchScreen.storyboard */; };
 		189C7AC322C5D6B000FB977C /* CardViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C7AC222C5D6B000FB977C /* CardViewTests.swift */; };
 		189C7ACE22C5D6B000FB977C /* CardViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C7ACD22C5D6B000FB977C /* CardViewUITests.swift */; };
+		189C7ADC22C61EA800FB977C /* GrintafyPlayerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189C7ADB22C61EA800FB977C /* GrintafyPlayerCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		189C7AC922C5D6B000FB977C /* CardViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189C7ACD22C5D6B000FB977C /* CardViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewUITests.swift; sourceTree = "<group>"; };
 		189C7ACF22C5D6B000FB977C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189C7ADB22C61EA800FB977C /* GrintafyPlayerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrintafyPlayerCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				189C7AAD22C5D6AD00FB977C /* AppDelegate.swift */,
 				189C7AAF22C5D6AD00FB977C /* ViewController.swift */,
+				189C7ADB22C61EA800FB977C /* GrintafyPlayerCard.swift */,
 				189C7AB122C5D6AD00FB977C /* Main.storyboard */,
 				189C7AB422C5D6AF00FB977C /* Assets.xcassets */,
 				189C7AB622C5D6AF00FB977C /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				189C7AB022C5D6AD00FB977C /* ViewController.swift in Sources */,
+				189C7ADC22C61EA800FB977C /* GrintafyPlayerCard.swift in Sources */,
 				189C7AAE22C5D6AD00FB977C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +437,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FQ6KC5YL9;
 				INFOPLIST_FILE = CardView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2FQ6KC5YL9;
 				INFOPLIST_FILE = CardView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
